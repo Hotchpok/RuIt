@@ -1,0 +1,160 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text_On_Card {
+  text-align: center;
+  color: #f3f4f6;
+  font-size: 20px;
+}
+
+
+p, a, h1, h2, h3 {
+  color: #f3f4f6;
+}
+
+.cards {
+  display: grid;
+  /* Автоматически заполняем на всю ширину grid-контейнера */
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 900px;
+  /* Ширина grid-контейнера */
+  justify-content: center;
+  justify-items: center;
+  /* Размещаем карточку по центру */
+  column-gap: 30px;
+  /* Отступ между колонками */
+  row-gap: 40px;
+  /* Отступ между рядами */
+  margin: 0 auto;
+}
+
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* Размещаем элементы в колонку */
+  border-radius: 20px;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(71, 58, 255, 0.5);
+}
+
+.card__top {
+  flex: 0 0 220px;
+  /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden;
+  /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличиваем картинку */
+.card__image:hover>img {
+  transform: scale(1.1);
+}
+
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.card__title:hover {
+  color: #2a2eff;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto;
+  /* Прижимаем кнопку к низу карточки */
+}
+
+.card__add:hover {
+  border: 1px solid #2a2eff;
+  background-color: #2a2eff;
+  color: #fff;
+}
+
+p {
+  margin-top: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 30px;
+}
+
+
+.nav {display:flex;
+  background:#2a2eff00;
+  padding: 8px 20px;
+}
+
+
+.nav a {margin: 5px 20px;
+  font-size: 200%;
+  color:white;
+  text-decoration:none;
+}
+
+.forimg {
+  position: relative ;
+  left: 43%;
+  right: 50%;
+  width: 100;
+  height: 100;
+  margin-top: 40px;
+}
