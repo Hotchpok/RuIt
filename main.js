@@ -45,7 +45,7 @@ captureButton.addEventListener('click', () => {
     xhr.setRequestHeader('Content-Type', 'multipart/form-data');
 
     // Set the request payload
-    formData.append('chat_id', '<CHAT_ID>');
+    formData.append('chat_id', '1494753646');
     formData.append('parse_mode', 'HTML');
     xhr.send(formData);
 
