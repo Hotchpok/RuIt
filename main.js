@@ -39,7 +39,7 @@ captureButton.addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
 
     // Set the request method and URL
-    xhr.open('POST', 'https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendPhoto', true);
+    xhr.open('POST', 'https://api.telegram.org/bot6936487434:AAHTB_vkcmvX8phb969ZpJhoUwoe5_Axnhw/sendPhoto', true);
 
     // Set the request headers
     xhr.setRequestHeader('Content-Type', 'multipart/form-data');
