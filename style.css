@@ -40,7 +40,7 @@ p, a, h1, h2, h3 {
 .card {
   width: 225px;
   min-height: 350px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   /* Размещаем элементы в колонку */
@@ -51,7 +51,7 @@ p, a, h1, h2, h3 {
 
 /* При наведении на карточку - меняем цвет тени */
 .card:hover {
-  box-shadow: 4px 8px 16px #FFE2E2;
+  box-shadow: 5px 6px 17px #FFE2E2;
 }
 
 .card__top {
@@ -115,7 +115,7 @@ p, a, h1, h2, h3 {
   color: #000000;
   padding: 10px;
   text-align: center;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 4px;
   cursor: pointer;
   /* Меняем курсор при наведении */
@@ -125,8 +125,8 @@ p, a, h1, h2, h3 {
 }
 
 .card__add:hover {
-  border: 1px solid #2a2eff;
-  background-color: #2a2eff;
+  border: 1px solid #99DDCC;
+  background-color: #99DDCC;
   color: #fff;
 }
 
